@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pudim - Versão Moderna</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+   <header class="hero">
+
+<div class="carousel-container">
+<img src="pudim.jfif" class="carousel-slide">
+<img src="pudim1.jfif" class="carousel-slide">
+<img src="pudim2.jfif" class="carousel-slide">
+<img src="pudim3.jfif" class="carousel-slide">
+</div>
+
+<div class="hero-text">
+<h2>Pudim</h2>
+<p>Um clássico da internet</p>
+</div>
+
+</header>
+
+    <main>
+
+        <section class="sobre">
+            <h2>Sobre o Pudim</h2>
+            <p>
+                O pudim é uma das sobremesas mais queridas no Brasil. Conhecido por sua textura cremosa e pela deliciosa calda de caramelo, ele é presença garantida em almoços de família e ocasiões especiais. A versão mais popular 
+                é feita com leite condensado, ovos e açúcar, resultando em um sabor doce e marcante. Além de ser simples de preparar, o pudim conquistou gerações e continua sendo uma das sobremesas mais tradicionais da culinária brasileira.
+            </p>
+        </section>
+
+        <section class="receita">
+
+<h2>Receita de Pudim de Leite Condensado </h2>
+
+<h3>Ingredientes</h3>
+<ul>
+<li>1 lata de leite condensado</li>
+<li>2 medidas de leite (use a lata como medida)</li>
+<li>3 ovos</li>
+<li>1 xícara de açúcar para a calda</li>
+</ul>
+
+<h3>Modo de preparo</h3>
+<ol>
+<li>Derreta o açúcar em uma panela até formar um caramelo.</li>
+<li>Espalhe a calda em uma forma de pudim.</li>
+<li>No liquidificador, bata o leite condensado, o leite e os ovos.</li>
+<li>Despeje a mistura na forma.</li>
+<li>Asse em banho-maria por cerca de 1 hora.</li>
+<li>Deixe esfriar, desenforme e sirva.</li>
+</ol>
+
+</section>
+
+        <section class="historia">
+            <h2>História e Curiosidades</h2>
+
+            <div class="cards">
+                <div class="card">
+                    <h3>Origem Europeia</h3>
+                    <p> O pudim tem origem na Europa e suas primeiras versões surgiram em Portugal. Com o passar do tempo, a receita foi sendo adaptada em diferentes países. 
+                        No Brasil, o pudim ganhou uma versão muito popular feita com leite condensado e calda de caramelo, 
+                        tornando-se uma das sobremesas mais tradicionais da culinária brasileira.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Popularização</h3>
+                    <p> Com o passar do tempo, o pudim se tornou uma sobremesa muito popular em diversos países. No Brasil, sua versão feita com leite condensado ganhou grande destaque pela facilidade de preparo e pelo sabor marcante.
+                        Presente em almoços de família, festas e restaurantes, o pudim se consolidou como uma das sobremesas mais tradicionais e apreciadas pelos brasileiros.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Curiosidades</h3>
+                    <p> O pudim é uma sobremesa apreciada em várias partes do mundo, mas cada país possui sua própria versão. No Brasil, o pudim de leite condensado é o mais famoso.
+                        Além disso, sua textura cremosa e o sabor da calda caramelizada fazem com que ele seja presença garantida em almoços de família e datas comemorativas.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section class="compartilhar">
+            <h2>Compartilhe</h2>
+
+            <div class="botoes">
+                <a href="https://api.whatsapp.com/send?text=Olha%20esse%20site%20sobre%20pudim!" target="_blank">WhatsApp</a>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https://seusite.netlify.app" target="_blank">Facebook</a>
+                <a href="https://twitter.com/intent/tweet?text=Adorei%20esse%20site%20sobre%20pudim!" target="_blank">Twitter</a>
+            </div>
+        </section> -->
+
+    </main>
+
+  <footer>
+
+<h3>Compartilhe este site</h3>
+
+<div class="social-icons">
+
+<a href="https://www.facebook.com/sharer/sharer.php?u=https://seusite.com" target="_blank">
+<i class="fab fa-facebook"></i>
+</a>
+
+<a href="https://twitter.com/intent/tweet?text=Adorei%20esse%20site%20sobre%20pudim!" target="_blank">
+<i class="fab fa-twitter"></i>
+</a>
+
+<a href="https://api.whatsapp.com/send?text=Olha%20esse%20site%20sobre%20pudim!" target="_blank">
+<i class="fab fa-whatsapp"></i>
+</a>
+
+</div>
+
+<p>Desenvolvido por Maria Eduarda | Engenharia de Software | 2026</p>
+
+</footer>
+
+    <script>
+let slideIndex = 0;
+mostrarSlides();
+
+function mostrarSlides() {
+  let slides = document.getElementsByClassName("carousel-slide");
+
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+
+  slides[slideIndex - 1].style.display = "block";
+
+  setTimeout(mostrarSlides, 4000);
+}
+
+function mudarSlide(n){
+  slideIndex += n - 1;
+  mostrarSlides();
+}
+</script>
+
+</body>
+</html>
